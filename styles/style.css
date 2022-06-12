@@ -111,6 +111,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .category-names>h2 {
