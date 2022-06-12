@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Login/SignUp </title>
+</head>
+
+<body class="loginpage">
+    <!--Section 1 : Login Box-->
+
+    <div class="loginBox" id="loginBox">
+
+        <h2>Sign in here</h2>
+        <div name="login" action="login.php" method="post">
+            <div class="inputBox">
+                <label>Email:</label> <input id="login_email" type="text" required="required">
+                <label>Password:</label><input id="login_pass" type="password" required="required">
+            </div>
+            <button value="Login" id="login" class="button">Login</button>
+        </div>
+        <div>
+            <p class="no_account">Don't have an account?</p>
+            <p class="signup" id="register">Register</p>
+        </div>
+    </div>
+
+    <!--Section 2 : Signup Box-->
+
+    <div class="signupBox" id="signupBox">
+        <div name="signup">
+            <h2>Create New Account</h2>
+            <div class="inputBox">
+                <label>Full Name:</label> <input id="full_name" type="text" name="fullname" required="required">
+                <label>Email:</label> <input id="signup_email" type="text" name="Email" required="required">
+                <label>Password:</label> <input id="signup_pass" type="password" name="Password" required="required">
+                <label>Confirm Password:</label> <input id="conf_pass" type="password" name="Password" required="required">
+
+            </div>
+            <button id="s" value="Sign Up" class="button">Sign Up</button>
+        </div>
+        <p class="back" id="back">Back</p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../scripts/login_signup.js"></script>
+
+</body>

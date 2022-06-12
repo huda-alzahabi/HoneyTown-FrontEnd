@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../assets/honeycomb-light.jpg");
+    background-repeat: repeat;
+}
+
+
+/* NavBar */
+
+.top-nav {
+    display: flex;
+    height: 80px;
+    font-family: 'Acme', sans-serif;
+    width: 100%;
+}
+
+.links {
+    flex: auto;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.links>li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.links>li:first-child {
+    text-decoration: underline;
+}
+
+.links>li:last-child {
+    margin-left: 0;
+}
+
+.btn {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-login {
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+    background-color: rgb(223, 209, 130);
+    font-size: 18px;
+}
+
+.container {
+    padding: 0 6vw;
+    width: 100%;
+}
+
+
+/* Hero */
+
+.hero {
+    background: url("../assets/ThinkstockPhotos-517937844.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    height: 120vh;
+}
+
+.hero-content {
+    width: 40%;
+    margin-top: 10%;
+}
+
+.hero-heading {
+    font-size: 55px;
+    margin-bottom: 40px;
+    font-family: 'Acme', sans-serif;
+}
+
+.hero-paragraph {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Acme', sans-serif;
+}
+
+
+/*Honey Categories*/
+
+.category {
+    text-align: center;
+}
+
+.category>h1 {
+    font-family: "Segoe print", Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    text-shadow: -1px -1px rgb(146, 22, 22), -3px 0 4px #000;
+}
+
+.category-names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.category-names>h2 {
+    width: 25%;
+    text-shadow: -1px -1px rgb(223, 209, 130), -3px 0 4px #000;
+    font-family: "Segoe print", Arial, Helvetica, sans-serif;
+    color: rgb(146, 22, 22);
+    padding: 50px 0 0 0;
+    font-size: 40px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+/*Login_Signup*/
+
+.loginpage {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.loginBox,
+.signupBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 90%;
+    background: url("../assets/honeybg.webp");
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-size: cover;
+    font-family: 'Acme', sans-serif;
+}
+
+.loginBox>h2 {
+    font-size: xx-large;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.signupBox>div>h2 {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.loginBox input,
+.signupBox input,
+.button {
+    width: 100%;
+    margin-bottom: 15px
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"],
+.signupBox input[type="text"],
+.signupBox input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 50px;
+    color: black;
+    background: rgb(245, 214, 167);
+    font-size: 20px;
+    padding-left: 20px;
+    box-sizing: border-box
+}
+
+.loginBox input[type="text"]:hover,
+.loginBox input[type="password"]:hover,
+.signupBox input[type="text"]:hover,
+.signupBox input[type="password"]:hover {
+    color: bisque;
+    border: 1px solid rgb(131, 66, 66);
+    ;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .3), 0 0 10px rgba(0, 255, 0, .2), 0 0 15px rgba(0, 255, 0, .1), 0 2px 0 black
+}
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus,
+.signupBox input[type="text"]:focus,
+.signupBox input[type="password"]:focus {
+    border-bottom: 2px solid rgb(131, 66, 66);
+}
+
+.signup,
+.back {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signupBox {
+    display: none;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputBox span {
+    position: absolute;
+    top: 10px;
+    color: #262626;
+}
+
+.button {
+    border: none;
+    outline: none;
+    height: 60px;
+    font-size: 20px;
+    background: rgb(245, 214, 167);
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Acme', sans-serif;
+}
+
+.no_account {
+    margin-bottom: 2%;
+}
+
+label {
+    font-size: 18px;
+}
+
+
+/*Items per category*/
+
+.honey_item {
+    text-align: center;
+}
+
+.honey_item>h1 {
+    font-family: "Segoe print", Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    text-shadow: -1px -1px rgb(146, 22, 22), -3px 0 4px #000;
+}
+
+.items {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.category_item {
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    border: 5px solid burlywood;
+}
+
+.item_name,
+.item_price {
+    text-shadow: -1px -1px rgb(223, 209, 130), -3px 0 4px #000;
+    font-family: "Segoe print", Arial, Helvetica, sans-serif;
+    color: rgb(146, 22, 22);
+    padding: 30px 0 0 0;
+    font-size: 30px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.item_image {
+    width: 300px;
+    height: 300px;
+}
+
+
+/*Styling footer*/
+
+.footer {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(221, 202, 92);
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+}
+
+p {
+    text-align: center;
+    width: 90%;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    flex-direction: row;
+    float: right;
+}
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .links {
+        width: 50%;
+    }
+    .item_image {
+        width: 150px;
+        height: 150px;
+    }
+    .hero-heading {
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+    .hero-paragraph {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    .category-names {
+        flex-direction: column;
+    }
+    .loginBox,
+    .signupBox {
+        width: 90%;
+    }
+}
