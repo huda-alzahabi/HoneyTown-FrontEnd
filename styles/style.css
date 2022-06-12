@@ -292,8 +292,8 @@ label {
     cursor: pointer;
 }
 
-.item_image {
-    width: 300px;
+img {
+    width: 280px;
     height: 300px;
 }
 
