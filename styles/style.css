@@ -292,8 +292,8 @@ label {
 }
 
 img {
-    width: 280px;
-    height: 300px;
+    width: 95%;
+    height: 50%;
 }
 
 
@@ -327,10 +327,6 @@ p {
     }
     .links {
         width: 50%;
-    }
-    .item_image {
-        width: 150px;
-        height: 150px;
     }
     .hero-heading {
         font-size: 35px;
