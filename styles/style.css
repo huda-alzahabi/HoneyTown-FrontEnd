@@ -158,15 +158,14 @@ body {
 }
 
 .loginBox>h2 {
-    font-size: xx-large;
-    margin-top: 20%;
+    font-size: x-large;
+    margin-top: 5px;
     text-align: center;
 }
 
 .signupBox>div>h2 {
-    font-size: xx-large;
+    font-size: x-large;
     text-align: center;
-    margin-top: 5%;
 }
 
 .loginBox input,
@@ -246,7 +245,7 @@ body {
 }
 
 label {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 
@@ -321,7 +320,7 @@ p {
     float: right;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .footer {
         flex-direction: column;
         width: 100%;
@@ -347,5 +346,19 @@ p {
     .loginBox,
     .signupBox {
         width: 90%;
+    }
+    .signupBox>div>h2,
+    .loginBox input[type="text"],
+    .loginBox input[type="password"],
+    .signupBox input[type="text"],
+    .signupBox input[type="password"],
+    .signup,
+    .back,
+    .button {
+        font-size: 15px;
+        height: 30px;
+    }
+    .loginBox>h2 {
+        margin-top: 0;
     }
 }
