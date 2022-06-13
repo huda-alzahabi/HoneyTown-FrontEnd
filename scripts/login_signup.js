@@ -38,8 +38,8 @@ function showSignUp() {
                 password_confirmation: conf_pass,
             },
         }).then((response) => {
-            console.log(response);
             result = response.data;
+            localStorage.setItem("user_id", result["user"].id);
             location.href = "../pages/login_signup.html";
         });
     });
