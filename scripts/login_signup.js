@@ -61,6 +61,7 @@ function loginToMain() {
     }).then(function(response) {
         result = response.data;
         console.log(result);
+        window.localStorage.setItem("Bearer", result.access_token);
         location.href = "../index.html";
     });
 }

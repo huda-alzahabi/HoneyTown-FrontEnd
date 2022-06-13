@@ -70,12 +70,14 @@ function createItem(id, name, price, image) {
 }
 
 function saveFavoriteItems(item_id) {
+    const token = window.localStorage.getItem("Bearer");
     axios({
         method: "post",
         url: "http://127.0.0.1:8000/api/v1/user/add_to_favorites",
         data: {
             user_id: localStorage.getItem("user_id"),
             item_id: item_id,
+            headers: { Authorization: "Bearer " + token },
         },
     }).then((response) => {
         result = response.data;
