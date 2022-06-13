@@ -383,14 +383,6 @@ p {
     width: 90%;
 }
 
-.footer_links {
-    display: flex;
-    justify-content: space-between;
-    width: 10%;
-    flex-direction: row;
-    float: right;
-}
-
 @media only screen and (max-width: 600px) {
     .footer {
         flex-direction: column;
