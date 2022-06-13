@@ -39,7 +39,8 @@ function showSignUp() {
             },
         }).then((response) => {
             console.log(response);
-            location.href = "../index.html";
+            result = response.data;
+            location.href = "../pages/login_signup.html";
         });
     });
 }
@@ -60,8 +61,7 @@ function loginToMain() {
     }).then(function(response) {
         result = response.data;
         console.log(result);
-        // location.href = "../index.html";
-        //  window.localStorage.setItem("user_id", result.id);
+        location.href = "../index.html";
     });
 }
 loginSignup();
