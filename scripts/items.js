@@ -66,5 +66,19 @@ function createItem(id, name, price, image) {
         localStorage.setItem("list", JSON.stringify(list));
     });
     count++;
+    saveFavoriteItems(id);
+}
+
+function saveFavoriteItems(item_id) {
+    axios({
+        method: "post",
+        url: "http://127.0.0.1:8000/api/v1/user/add_to_favorites",
+        data: {
+            user_id: localStorage.getItem("user_id"),
+            item_id: item_id,
+        },
+    }).then((response) => {
+        result = response.data;
+    });
 }
 getItems();
